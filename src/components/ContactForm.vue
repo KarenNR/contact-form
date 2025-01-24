@@ -102,4 +102,8 @@
     .query-type:hover {
         border: 1px solid #3E3E3E;
     }
+
+    .submit-btn {
+        text-transform: unset !important;
+    }
 </style>
