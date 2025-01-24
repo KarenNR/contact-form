@@ -40,12 +40,14 @@
 
 <template>
     <v-container class="py-0">
+        <!-- Form -->
         <v-row justify="center">
             <v-col cols="12" md="7">
                 <v-card elevation="0" class="px-8 py-7 rounded-lg">
                     <v-form @submit.prevent ref="contactForm">
                         <h1 class="text-dark mb-4">Contact Us</h1>
                         <v-row>
+                            <!-- First Name Field -->
                             <v-col cols="12" md="6">
                                 <p class="text-dark mb-2">First Name *</p>
                                 <v-text-field variant="outlined" 
@@ -55,6 +57,7 @@
                                               :rules="[rules.required]"
                                               v-model="firstName"></v-text-field>
                             </v-col>
+                            <!-- Last Name Field -->
                             <v-col cols="12" md="6">
                                 <p class="text-dark mb-2">Last Name *</p>
                                 <v-text-field variant="outlined" 
@@ -66,6 +69,7 @@
                             </v-col>
                         </v-row>
                         <v-row>
+                            <!-- Email Address Field -->
                             <v-col cols="12">
                                 <p class="text-dark mb-2">Email Address *</p>
                                 <v-text-field variant="outlined" 
@@ -78,6 +82,7 @@
                         </v-row>
                         <v-radio-group class="mt-4" :rules="[rules.requiredQuery]" v-model="queryType">
                             <v-row>
+                                <!-- Query Type Field -->
                                 <v-col cols="12" class="mb-0 pb-0">
                                     <p class="text-dark">Query Type *</p>
                                 </v-col>
@@ -100,6 +105,7 @@
                             </v-row>
                         </v-radio-group>
                         <v-row>
+                            <!-- Message Field -->
                             <v-col cols="12">
                                 <p class="text-dark mb-2">Message *</p>
                                 <v-textarea variant="outlined" 
@@ -112,6 +118,7 @@
                             </v-col>
                         </v-row>
                         <v-row>
+                            <!-- Consent Field -->
                             <v-col cols="12">
                                 <v-checkbox label="I consent to being contacted by the team *"
                                             hide-details="auto"
@@ -135,6 +142,7 @@
             </v-col>
         </v-row>
 
+        <!-- Success message -->
         <v-snackbar v-model="snackbar"
                     timeout="5000"
                     location="top"
@@ -143,8 +151,6 @@
                     rounded="lg">
             <v-card variant="text" class="px-3 py-2">
                 <p class="mb-2 d-flex align-center">
-                    <!--<v-icon icon="mdi-check-circle-outline"
-                        color="white"></v-icon>-->
                     <img src="/assets/images/icon-success-check.svg" alt="Success" height="18" class="me-2">
                     <span class="font-weight-bold">Message Sent!</span>
                 </p>
