@@ -10,6 +10,7 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Running the project locally](#running-the-project-locally)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
@@ -36,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site URL](https://your-live-site-url.com)
+- [Live site URL](https://contact-form-theta-ten.vercel.app/)
 
 ## My process
 
@@ -47,6 +48,13 @@ Users should be able to:
 - JavaScript
 - [Vue.js](https://vuejs.org/) - JavaScript framework
 - [Vuetify](https://vuetifyjs.com/en/) - Collection of pre-made components. This helped with the styles and layout.
+
+### Running the project locally
+
+```
+npm install
+npm run serve
+```
 
 ### What I learned
 
